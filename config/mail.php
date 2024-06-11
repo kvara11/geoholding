@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@hobbystudio.ge'),
-        'name' => env('MAIL_FROM_NAME', 'Hobbystudio'),
+        'address' => env('MAIL_FROM_ADDRESS', 'geoholding@geo-holding.com'),
+        'name' => env('MAIL_FROM_NAME', 'GeoHolding'),
     ],
 
     /*

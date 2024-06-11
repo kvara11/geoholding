@@ -15,17 +15,50 @@
 
 @media only screen and (min-width: $xxl_size) {}
 
-
-.brands{
-    &__box{
-        box-shadow: 3px 4px 7px 0px #5EC5F12B;
-        border: 1px solid #00000014;
-        border-radius: 24px;
+.ice-land{
+    .brands{
+        &__box{
+            box-shadow: 3px 4px 7px 0px #5EC5F12B;
+            border: 1px solid #00000014;
+            border-radius: 24px;
+        }
+    
+        &__small_title{
+            font-family: FiraGO;
+            font-weight: 800;
+            color: $color_0;
+        }
     }
+}
 
-    &__small_title{
-        font-family: FiraGO;
-        font-weight: 800;
-        color: $color_0;
+.bd-comp{
+    .brands{
+        &__box{
+            box-shadow: 3px 4px 7px 0px #A6252533;
+            border: 1px solid #00000014;
+            border-radius: 24px;
+        }
+    
+        &__small_title{
+            font-family: FiraGO;
+            font-weight: 800;
+            color: $color_10;
+        }
+    }
+}
+
+.bd-plus{
+    .brands{
+        &__box{
+            box-shadow: 3px 4px 7px 0px #3669B333;
+            border: 1px solid #00000014;
+            border-radius: 24px;
+        }
+    
+        &__small_title{
+            font-family: FiraGO;
+            font-weight: 800;
+            color: $color_20;
+        }
     }
 }

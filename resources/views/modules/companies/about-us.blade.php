@@ -16,7 +16,9 @@
 					<div class="row">
 						<div class="col-md-11">
 							<div class="pe-md-5 home__head_text pb-4">{!! $activeAbout->section1text !!}</div>
-							<button class="about_us__contact border-0 py-2 p-4">{{ __('bsw.contact_us') }}</button>
+							<a href="{{ $contactPage->fullUrl }}">
+								<button class="about_us__contact border-0 py-2 p-4">{{ __('bsw.contact_us') }}</button>
+							</a>
 						</div>
 					</div>
 				</div>

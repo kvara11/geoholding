@@ -15,15 +15,15 @@
 					p-0 
 					vacancies_step1__box_shadow
 					m-auto">
-			<div class="row border-bottom border-info p-2">
+			<div class="row vacancies__list_bottom p-2">
 				<span class="col-lg-3 col-sm-6">{{ __('bsw.position_name') }}:</span>
 				<span class="col-lg-7 col-sm-6">{{ $active->title }}</span>
 			</div>
-			<div class="row border-bottom border-info p-2">
+			<div class="row vacancies__list_bottom p-2">
 				<span class="col-lg-3 col-sm-6">{{ __('bsw.last_date') }} / {{ __('bsw.published') }}:</span>
 				<span class="col-lg-7 col-sm-6">{{ date("d.m.Y", strtotime($active->last_date)) }} / {{ date_format($active->created_at,"d.m.Y") }}</span>
 			</div>
-			<div class="row border-bottom border-info p-2">
+			<div class="row vacancies__list_bottom p-2">
 				<span class="col-lg-3 col-sm-6">{{ __('bsw.location') }}:</span>
 				<span class="col-lg-7 col-sm-6">{{ __($active->location) }}</span>
 			</div>

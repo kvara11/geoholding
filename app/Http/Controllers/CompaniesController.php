@@ -23,8 +23,6 @@ class CompaniesController extends FrontController
 
     function __construct() 
     {
-        //get active company by url
-        // dd(Route::getCurrentRoute()->step0Alias);
         parent::__construct();
         
         self::$page = Page::firstWhere('slug', self::PAGE_SLUG);
@@ -52,13 +50,10 @@ class CompaniesController extends FrontController
 
     public static function getStep1($lang, $step0Alias)
     {
-        // return self::getStep2($lang, $step0Alias, 'მთავარი');
-        // return redirect()->route('routeStep2', [$lang, $step0Alias, 'მთავარი']);
-
         $language = Language::firstWhere('title', $lang);
         $activeCompany = CompaniesStep0::firstWhere('alias_'.$language->title, $step0Alias);
         
-        # temporary save active company
+        # save active company
         config(['activeCompany' => $activeCompany]);
 
         $homePage = Page::firstWhere('slug', 'home');
@@ -78,17 +73,19 @@ class CompaniesController extends FrontController
 
             case 'home':
                 $activeHome = HomeStep0::firstWhere('top_level', $activeCompany->id);
+                $brandsPage = BrandsStep0::firstWhere('top_level', $activeCompany->id);
 
                 $activeBlock = $activeHome;
-                $data = array('activeHome' => $activeHome);
+                $data = array('activeHome' => $activeHome, 'brandsPage' => $brandsPage);
                 $bladeFile = 'home';
                 break;
             
             case 'about-us':
                 $activeAbout = AboutUsStep0::firstWhere('top_level', $activeCompany->id);
+                $contactPage = ContactsStep0::firstWhere('top_level', $activeCompany->id);
 
                 $activeBlock = $activeAbout;
-                $data = array('activeAbout' => $activeAbout);
+                $data = array('activeAbout' => $activeAbout, 'contactPage' => $contactPage);
                 $bladeFile = 'about-us';
                 break;
             

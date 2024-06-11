@@ -115,7 +115,7 @@ class HomeStep0 extends Model
 
     public function partners()
     {
-        return $this->hasMany(HomeStep6::class, 'top_level', 'id');
+        return $this->hasMany(HomeStep6::class, 'top_level', 'id')->orderByDesc('rang');
     }
 
     public function services()

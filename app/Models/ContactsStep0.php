@@ -75,7 +75,8 @@ class ContactsStep0 extends Model
     
 	public function getFullUrlAttribute() 
     {
-        return self::$page->fullUrl.'/'.$this->alias;
+        // return self::$page->fullUrl.'/'.$this->alias;
+        return self::getFullUrl(App::getLocale());
     }
 
 
@@ -83,7 +84,8 @@ class ContactsStep0 extends Model
     {
         $mainAlias = Page::firstWhere('slug', 'company')->{'alias_'.App :: getLocale()};
         
-        return '/'.$lang.'/'.$mainAlias.'/'.config('activeCompany')->alias.'/'.self::$page->{ 'alias_'.$lang }.'/'.$this->{ 'alias_'.$lang };
+        // return '/'.$lang.'/'.$mainAlias.'/'.config('activeCompany')->alias.'/'.self::$page->{ 'alias_'.$lang }.'/'.$this->{ 'alias_'.$lang };
+        return '/'.$lang.'/'.$mainAlias.'/'.config('activeCompany')->alias.'/'.self::$page->{ 'alias_'.$lang };
     }
 
 }

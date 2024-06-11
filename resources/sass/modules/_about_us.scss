@@ -16,18 +16,56 @@
 @media only screen and (min-width: $xxl_size) {}
 
 
-.about_us{
-    &__contact{
-        background-color: $color_0;
-        border-radius: 6px;
-        color: $color_4;
+.ice-land{
+    .about_us{
+        &__contact{
+            background-color: $color_0;
+            border-radius: 6px;
+            color: $color_4;
+        }
+    
+        &__our_goal{
+            background-color: #5EC5F133;
+        }
+    
+        &__text{
+            line-height: 30px;
+        }
     }
+}
 
-    &__our_goal{
-        background-color: #5EC5F133;
+.bd-comp{
+    .about_us{
+        &__contact{
+            background-color: $color_10;
+            border-radius: 6px;
+            color: $color_4;
+        }
+    
+        &__our_goal{
+            background-color: #A6252533;
+        }
+    
+        &__text{
+            line-height: 30px;
+        }
     }
+}
 
-    &__text{
-        line-height: 30px;
+.bd-plus{
+    .about_us{
+        &__contact{
+            background-color: $color_20;
+            border-radius: 6px;
+            color: $color_4;
+        }
+    
+        &__our_goal{
+            background-color: #3669B333;
+        }
+    
+        &__text{
+            line-height: 30px;
+        }
     }
 }

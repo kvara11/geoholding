@@ -16,58 +16,188 @@
 @media only screen and (min-width: $xxl_size) {}
 
 
-.vacancies{
-    &__head_list {
-        background-color: $color_0;
-        border-radius: 16px;
-    }
+.ice-land{
+    .vacancies{
+        &__head_list {
+            background-color: $color_0;
+            border-radius: 16px;
+        }
+    
+        &__box_shadow {
+            box-shadow: 4px 4px 4px 1px rgba(94, 197, 241, 0.17);
+        }
+        
+        &__rounded_border{
+            border-radius: 35px;
+        }
 
-    &__box_shadow {
-        box-shadow: 4px 4px 4px 1px rgba(94, 197, 241, 0.17);
+        &__list_bottom{
+            border-bottom: 1px solid $color_0;
+        }
     }
     
-    &__rounded_border{
-        border-radius: 35px;
+    .vacancies_step1{
+        &__header_wrapper{
+            border-radius: 20px;
+        }
+    
+        &__box_shadow {
+            box-shadow: 4px 4px 4px 1px rgba(94, 197, 241, 0.17);
+        }
+    }
+    
+    .page-item:first-child .page-link {
+        border: 1px solid $color_0 !important;
+        border-radius: 8px !important;
+        background-color: transparent !important;
+    }
+    
+    .page-item:last-child .page-link {
+        border: 1px solid $color_0 !important;
+        border-radius: 8px !important;
+        background-color: transparent !important;
+    }
+    
+    .pagination li{
+        margin: 5px;
+    }
+    
+    .pagination .page-link{
+        border: 1px solid transparent !important;
+        background-color: #5EC5F133;
+        border-radius: 8px !important;
+    }
+    
+    .page-item .page-link{
+        color: $color_0;
+    }
+    
+    .page-item.active .page-link{
+        background-color: $color_0 !important;
+        color: #fff !important;
     }
 }
 
-.vacancies_step1{
-    &__header_wrapper{
-        border-radius: 20px;
+.bd-comp{
+    .vacancies{
+        &__head_list {
+            background-color: $color_10;
+            border-radius: 16px;
+        }
+    
+        &__box_shadow {
+            box-shadow: 4px 4px 4px 1px #A6252533;
+        }
+        
+        &__rounded_border{
+            border-radius: 35px;
+        }
+
+        &__list_bottom{
+            border-bottom: 1px solid $color_10;
+        }
+    }
+    
+    .vacancies_step1{
+        &__header_wrapper{
+            border-radius: 20px;
+        }
+    
+        &__box_shadow {
+            box-shadow: 4px 4px 4px 1px #A6252533;
+        }
     }
 
-    &__box_shadow {
-        box-shadow: 4px 4px 4px 1px rgba(94, 197, 241, 0.17);
+    .page-item:first-child .page-link {
+        border: 1px solid $color_10 !important;
+        border-radius: 8px !important;
+        background-color: transparent !important;
+    }
+    
+    .page-item:last-child .page-link {
+        border: 1px solid $color_10 !important;
+        border-radius: 8px !important;
+        background-color: transparent !important;
+    }
+    
+    .pagination li{
+        margin: 5px;
+    }
+    
+    .pagination .page-link{
+        border: 1px solid transparent !important;
+        background-color: #A6252533;
+        border-radius: 8px !important;
+    }
+    
+    .page-item .page-link{
+        color: $color_10;
+    }
+    
+    .page-item.active .page-link{
+        background-color: $color_10 !important;
+        color: #fff !important;
     }
 }
 
-.page-item:first-child .page-link {
-    border: 1px solid #5EC5F1 !important;
-    border-radius: 8px !important;
-    background-color: transparent !important;
-}
+.bd-plus{
+    .vacancies{
+        &__head_list {
+            background-color: $color_20;
+            border-radius: 16px;
+        }
+    
+        &__box_shadow {
+            box-shadow: 4px 4px 4px 1px #3669B333;
+        }
+        
+        &__rounded_border{
+            border-radius: 35px;
+        }
 
-.page-item:last-child .page-link {
-    border: 1px solid #5EC5F1 !important;
-    border-radius: 8px !important;
-    background-color: transparent !important;
-}
-
-.pagination li{
-    margin: 5px;
-}
-
-.pagination .page-link{
-    border: 1px solid transparent !important;
-    background-color: #5EC5F133;
-    border-radius: 8px !important;
-}
-
-.page-item .page-link{
-    color: #5EC5F1;
-}
-
-.page-item.active .page-link{
-    background-color: #5EC5F1 !important;
-    color: #fff !important;
+        &__list_bottom{
+            border-bottom: 1px solid $color_20;
+        }
+    }
+    
+    .vacancies_step1{
+        &__header_wrapper{
+            border-radius: 20px;
+        }
+    
+        &__box_shadow {
+            box-shadow: 4px 4px 4px 1px #3669B333;
+        }
+    }
+    
+    .page-item:first-child .page-link {
+        border: 1px solid $color_20 !important;
+        border-radius: 8px !important;
+        background-color: transparent !important;
+    }
+    
+    .page-item:last-child .page-link {
+        border: 1px solid $color_20 !important;
+        border-radius: 8px !important;
+        background-color: transparent !important;
+    }
+    
+    .pagination li{
+        margin: 5px;
+    }
+    
+    .pagination .page-link{
+        border: 1px solid transparent !important;
+        background-color: #3669B333;
+        border-radius: 8px !important;
+    }
+    
+    .page-item .page-link{
+        color: $color_20;
+    }
+    
+    .page-item.active .page-link{
+        background-color: $color_20 !important;
+        color: #fff !important;
+    }
 }

@@ -106,5 +106,8 @@ return [
     'companies' => 'Companies',
     'menu' => 'Menu',
     'contacts' => 'Contacts',
-
+    'see_brands' => 'See brands',
+    'brand_product' => 'Brand product',
+    'partner' => 'Partner',
+    'delivery_location' => 'Delivery location',
 ];

@@ -27,47 +27,179 @@
    
 }
 
-
-.contact_page {
-    color: white;
-    margin-top: -30px;
-
-    &__bg_image {
-        z-index: -1;
-        object-fit: cover;
+.contact_page{
+    &__button{
+        height: 38px;
     }
+}
 
-    &__info_wrapper {
-        background-color: $color_0;
-        position: relative;
-    }
+.ice-land{
+    .contact_page {
+        color: white;
+        margin-top: -30px;
+    
+        &__bg_image {
+            z-index: -1;
+            object-fit: cover;
+        }
+    
+        &__info_wrapper {
+            background-color: $color_0;
+            position: relative;
+        }
+    
+        &__send_message_wrapper {
+            background-color: white;
+        }
+    
+    
+        &__form_wrapper {
+            box-shadow:-1px -1px 22px -4px $color_1;
+        }
+    
+        &__input_wrapper {
+            cursor: text!important;
+    
+            & input:focus {
+                outline: none!important;
+            }
+        }
+    
+        &__required {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 25%;
+                right: 8%;
+                content: ' *';
+                color: $color_0;
+            }
+        }
 
-    &__send_message_wrapper {
-        background-color: white;
-    }
+        &__button{
+            background-color: $color_0 !important;
+        }
 
+        &__input_wrapper{
+            border: 1px solid $color_0 !important;
+        }
 
-    &__form_wrapper {
-        box-shadow:-1px -1px 22px -4px $color_1;
-    }
-
-    &__input_wrapper {
-        cursor: text!important;
-
-        & input:focus {
-            outline: none!important;
+        textarea{
+            border: 1px solid $color_0 !important;
         }
     }
+}
 
-    &__required {
-        position: relative;
-        &::after {
-            position: absolute;
-            top: 25%;
-            right: 8%;
-            content: ' *';
-            color: $color_0;
+.bd-comp{
+    .contact_page {
+        color: white;
+        margin-top: -30px;
+    
+        &__bg_image {
+            z-index: -1;
+            object-fit: cover;
+        }
+    
+        &__info_wrapper {
+            background-color: $color_10;
+            position: relative;
+        }
+    
+        &__send_message_wrapper {
+            background-color: white;
+        }
+    
+    
+        &__form_wrapper {
+            box-shadow:-1px -1px 22px -4px $color_11;
+        }
+    
+        &__input_wrapper {
+            cursor: text!important;
+    
+            & input:focus {
+                outline: none!important;
+            }
+        }
+    
+        &__required {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 25%;
+                right: 8%;
+                content: ' *';
+                color: $color_10;
+            }
+        }
+
+        &__button{
+            background-color: $color_10 !important;
+        }
+    
+        &__input_wrapper{
+            border: 1px solid $color_10 !important;
+        }
+
+        textarea{
+            border: 1px solid $color_10 !important;
         }
     }
+}
 
+.bd-plus{
+    .contact_page {
+        color: white;
+        margin-top: -30px;
+    
+        &__bg_image {
+            z-index: -1;
+            object-fit: cover;
+        }
+    
+        &__info_wrapper {
+            background-color: $color_20;
+            position: relative;
+        }
+    
+        &__send_message_wrapper {
+            background-color: white;
+        }
+    
+    
+        &__form_wrapper {
+            box-shadow:-1px -1px 22px -4px $color_21;
+        }
+    
+        &__input_wrapper {
+            cursor: text!important;
+    
+            & input:focus {
+                outline: none!important;
+            }
+        }
+    
+        &__required {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 25%;
+                right: 8%;
+                content: ' *';
+                color: $color_20;
+            }
+        }
+
+        &__button{
+            background-color: $color_20 !important;
+        }
+    
+        &__input_wrapper{
+            border: 1px solid $color_20 !important;
+        }
+
+        textarea{
+            border: 1px solid $color_20 !important;
+        }
+    }
 }

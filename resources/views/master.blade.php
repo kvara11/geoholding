@@ -13,7 +13,21 @@
 
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/'.app() -> getLocale().'.css') }}">
-		<link rel="shortcut icon" href="{{ asset('/storage/images/site_icon.png') }}">
+
+		@switch(config('activeCompany')->const)
+				@case('ice-land')
+					<link rel="shortcut icon" href="{{ asset('/storage/images/logo.svg') }}">
+				@break
+
+				@case('bd-comp')
+					<link rel="shortcut icon" href="{{ asset('/storage/images/logo_comp.svg') }}">
+				@break
+
+				@case('bd-plus')
+					<link rel="shortcut icon" href="{{ asset('/storage/images/logo_plus.svg') }}">
+				@break
+			@default
+		@endswitch
 
 		<script src="{{ asset('js/app.js') }}"></script>
 
@@ -29,6 +43,7 @@
 			<!-- sweetalert2 -->
 				<script src="{{ asset('js/plugins/sweetalert2.all.min.js') }}"></script>
 			<!--  -->
+			
 
 			<!-- owl carousel -->
 				<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/owl.carousel.min.css') }}">
@@ -44,7 +59,7 @@
 					@case('ice-land')ice-land @break @case('bd-comp')bd-comp @break @case('bd-plus')bd-plus @break @default @endswitch">
 			@include('includes.photoswipe')
 
-			@include('includes.bootstrap_size_getter')
+			{{-- @include('includes.bootstrap_size_getter') --}}
 
 			@include('modules.header.basic')
 

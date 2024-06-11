@@ -31,7 +31,6 @@ class SendContacts extends Mailable
      */
     public function build()
     {
-        // 
         return $this->from(config('mail.from.address'))->subject('Contact form')->markdown('email.contactForm')->with('form', $this->form);;
     }
 }

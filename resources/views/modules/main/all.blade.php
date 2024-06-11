@@ -19,6 +19,18 @@
 	</div>
 </div>
 
+<script>
+	var linkElement = document.createElement('link');
+
+	linkElement.rel = 'shortcut icon';
+	linkElement.href = "{{ asset('/storage/images/geo_holding.svg') }}";
+
+	var headElement = document.head || document.getElementsByTagName('head')[0];
+
+	headElement.appendChild(linkElement);
+	console.log(headElement)
+</script>
+
 <style>
 	.main{
 		background-color:#5EC5F1;
