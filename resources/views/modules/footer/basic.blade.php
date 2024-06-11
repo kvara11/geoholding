@@ -282,7 +282,8 @@
                             p-2
                             text-lg-start
                             text-center">
-                    © {{ config('constants.year_of_site_creation') }} {{ __('bsw.copyright') }} 
+                    {{--  {{ config('constants.year_of_site_creation') }}  --}}
+                    © {{ __('bsw.copyright') }} 
                 </div>
 
                 <div class="col-lg-4
