@@ -14,7 +14,7 @@ return [
     'logout' => 'Logout',
     'welcome' => 'Welcome',
     'open_web_page' => 'Open web page',
-    'copyright' => 'Ltd "Company Title". All rights reserved.',
+    'copyright' => '2016 - 2024 Ltd "BD plus". All rights reserved.',
     'add' => 'Add',
     'adding' => 'Adding',
     'select' => 'Select',
