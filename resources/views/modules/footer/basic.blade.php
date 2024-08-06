@@ -279,7 +279,7 @@
                             p-2
                             text-lg-end
                             text-center">
-                    Created by <a href="http://hobbystudio.ge/" target="_blank" class="text-secondary">HobbyStudio</a>
+                    Created by <a href="https://hobbystudio.international/" target="_blank" class="text-secondary">HobbyStudio</a>
                 </div>
             </div>
         </div>

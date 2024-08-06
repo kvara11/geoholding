@@ -14,7 +14,7 @@
 					@if (file_exists(public_path('storage/images/modules/companies/89/' . $brand->id . '.png')))
 						<div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 p-2">
 							@if($brand->link)
-								<a href="{{ $brand->link }}">
+								<a href="{{ $brand->link }}" target="_blank">
 							@endif
 									<div class="brands__box text-center p-3">
 										<div>
